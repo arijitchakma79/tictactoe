@@ -1,5 +1,39 @@
 /* src/Square.css */
+
+.square {
+  font-size: 24px; 
+  width: 100px; 
+  height: 100px; 
+  padding: 15px; 
+  border: 2px solid #ddd;
+  text-align: center;
+  cursor: pointer;
+  background-color: #555; 
+  color: #fff;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+}
+
 .square:hover {
-    background-color: #d14c4c;
+  background-color: #272727;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .square {
+    font-size: 18px; 
+    width: 60px; 
+    height: 60px; 
+    padding: 15px;
   }
-  
+
+  /* Media Query for medium screens  */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .square {
+    font-size: 24px; 
+    width: 80px; 
+    height: 80px; 
+    padding: 20px; 
+  }
+}
+}
